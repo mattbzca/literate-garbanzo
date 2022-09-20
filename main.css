@@ -1,21 +1,55 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #edf0f1
 }
-.container {}
-li, a, button {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #2c5461
+.header {
+    background-color: maroon;
+    padding: 15px;
+    text-align: center;
 }
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+.nav_menu {
+    overflow: hidden;
+    background-color: #333;
+}
+.nav_menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav_menu a:hover {
+    background-color: white;
+    color: maroon;
+}
+.columnA, .columnB, .columnC {
+    float: left;
+    width: 31%
+    padding: 15px;
+    text-align: justify;
+    overflow-y:auto
+}
+center {
+    font-size:200%
+}
+.columngap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    column-gap: 25px;
+    column-rule-style: solid;
+    column-rule-color: black;
+    box-shadow: 0 1px 8px rgb(197, 194, 194);
+}
+@media screen and (max-width:600px) {
+    .columnA, .columnB, .columnC {
+        width: 50%;
+    }
+}
+@media screen and (max-width:400px) {
+    .columnA, .columnB, .columnC {
+        width: 100%;
+    }
 }
 body {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -28,4 +62,15 @@ body {
     height: 4rem;
     width: 9rem;
     cursor: pointer;
+}
+h2 {
+   font-size: 1.2rem;
+   text-align: center;
+}
+#copyright {
+    font-size: 75%;
+}
+footer {
+    position: fixed;
+    bottom: 0;
 }

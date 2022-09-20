@@ -9,25 +9,48 @@
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-red fixed-top">
-        <div class="container-fluid">
+    <!--header-->
+    <div class="header">
+        <h2 style="color:red;font-size:200%;">
             <img  class="favicon" src="favicon.ico" alt="favicon">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        </h2>
+    </div>
+    <!--nav menu-->
+    <div class="nav_menu">
+        <a href="index.html">Home</a>
+    </div><br>
+   
+    <center>
+    Finish ①-③ to submit your order. 	
+    </center>
+    <div class="columngap">
+        <div class="columnA">
+            <h2>① Please enter an e-mail address and name to finish your order.</h2>    
+            <form id="email_form" action="Begin_Ordering.php" method="post">
+                <p>E-Mail: <input type="text" id="email"></p>
+                <p>Name: <input type="text" id="name"></p>
+                <p><input type="submit" id="submit" value="Submit"></p>    
+            </form>
+            <br>
+                <input type="button" id="message" value="test1">
+                <input type="button" id="message" value="test2">
+                <input type="button" id="message" value="test3">
+                <input type="button" id="message" value="test4">
+            </br>
         </div>
-    </nav>
-    <header>
-        <img  class="favicon" src="favicon.ico" alt="favicon">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-            </ul>
-        </nav>
-
-        <p>test test icon</p>
-    </header>
-
+        <div class="columnB">
+            <h2>② Food Entree Choice</h2>
+            <p>columnb</p>
+        </div>
+        <div class="columnC">
+            <h2>③ Side & Drink Choice</h2>
+            <p>columnc</p>
+        </div>
+    </div>
+    <footer>
+        <p id="copyright">© 2022 Matthew Tan</p>
+    </footer>
 </body>
 </html>
