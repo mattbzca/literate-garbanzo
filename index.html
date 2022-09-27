@@ -47,82 +47,132 @@
             </form>
         </div>
         <div class="columnB">
-            <h2>② Food Entree Choices</h2>
+            <fieldset>
+                <h2>② Food Entree Choices</h2>
+                    <section>
+                        <h2>Menu</h2>
+                        <button id="myBtn">Food Specials</button>
+                            <div id="myModal" class="modal">
+                                <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <img src="https://olo-images-live.imgix.net/53/539747fd2eaf46e8ab439a2274fe0593.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=350&h=233&fit=fill&fm=png32&bg=transparent&s=2d02250d3a016d810404f7534700badc" title="Sirloin Tips & Tenders" class="image1" alt="Sirloin Tips & Tenders">
+                                    <h3><input type="checkbox" name="food" id="food1" value="sirloinfmd1">—SIRLOIN TIPS* & CHICKEN TENDERS FAMILY MEAL DEAL</h3>
+                                    <p>Click for more:</p>
+                                    <button class="collapsible">Description</button>
+                                    <div class="content">
+                                    <p>Our signature Broiled Sirloin Tips paired with our Original Crispy Chicken Tenders. All served with honey mustard sauce, two House Salads and two sides to share.</p>
+                                    </div><br>
+                                    <button class="collapsible">Select Your Temperature</button>
+                                    <div class="content">
+                                    <form id="order" action="order.php" method="post"> 
+                                        <fieldset>
+                                            <legend>Select Your Temperature</legend>
+                                            <input type="radio" name="temperature" id="temp1" value="rare">
+                                            <label for="temp1">RARE - COOL, RED CENTER</label><br>
+                                            <input type="radio" name="temperature" id="temp2" value="mediumrare">
+                                            <label for="temp2">MEDIUM RARE - WARM, RED CENTER</label><br>
+                                            <input type="radio" name="temperature" id="temp3" value="medium">
+                                            <label for="temp3">MEDIUM - WARM, PINK CENTER</label><br>
+                                            <input type="radio" name="temperature" id="temp4" value="mediumwell">
+                                            <label for="temp4">MEDIUM WELL - HOT, SLIGHTLY PINK CENTER</label><br>
+                                            <input type="radio" name="temperature" id="temp5" value="well">
+                                            <label for="temp5">WELL - HOT, FULLY COOKED, NO PINK</label>
+                                        </fieldset>
+                                    </form>
+                                </div><br>
+                            <button class="collapsible">Sides</button>
+                                <div class="content">
+                                <form id="order" action="order.php" method="post">
+                                    <fieldset>
+                                        <legend>Select 2 Sides</legend>
+                                        <input type="checkbox" name="sides" id="side1" value="fries">
+                                        <label for="side1">FRENCH FRIES</label><br>
+                                        <input type="checkbox" name="sides" id="side1" value="fries">
+                                        <label for="side1">FRENCH FRIES</label><br>
+                                        <input type="checkbox" name="sides" id="side2" value="coleslaw">
+                                        <label for="side2">COLESLAW</label><br>
+                                        <input type="checkbox" name="sides" id="side2" value="coleslaw">
+                                        <label for="side2">COLESLAW</label><br>
+                                        <input type="checkbox" name="sides" id="side3" value="rice">
+                                        <label for="side3">RICE</label><br>
+                                        <input type="checkbox" name="sides" id="side3" value="rice">
+                                        <label for="side3">RICE</label><br>
+                                        <input type="checkbox" name="sides" id="side4" value="corn">
+                                        <label for="side4">CORN</label><br>
+                                        <input type="checkbox" name="sides" id="side4" value="corn">
+                                        <label for="side4">CORN</label><br>
+                                        <input type="checkbox" name="sides" id="side5" value="broccoli">
+                                        <label for="side5">BROCCOLI</label><br>
+                                        <input type="checkbox" name="sides" id="side5" value="brocolli">
+                                        <label for="side5">BROCCOLI</label><br>
+                                        <input type="checkbox" name="sides" id="side6" value="mashedpotatoes">
+                                        <label for="side6">MAINE RUSSET MASHED POTATO</label><br>
+                                        <input type="checkbox" name="sides" id="side6" value="mashedpotatoes">
+                                        <label for="side7">MAINE RUSSET MASHED POTATO</label><br>
+                                    </fieldset>
+                                </form>
+                                </div><br><br><br>
+                                <hr>
+                                <span class="close">&times;</span>
+                                    <img src="https://raw.githubusercontent.com/mattbzca/literate-garbanzo/main/images/GrillBalChicken.jpg" title="Grilled Balsamic Chicken" class="image2" alt="Grilled Balsamic Chicken">
+                                    <h3><input type="checkbox" name="food" id="food2" value="grillchkfmd1">—GRILLED BALSAMIC CHICKEN FAMILY MEAL DEAL</h3>
+                                    <p>Click for more:</p>
+                                    <button class="collapsible">Description</button>
+                                    <div class="content">
+                                    <p>Tender lemon rosemary marinated chicken breasts flame broiled with a balsamic glaze. All served with two House Salads and two sides to share.</p>
+                                    </div><br>
+                            <button class="collapsible">Sides</button>
+                                <div class="content">
+                                <form id="order" action="order.php" method="post">
+                                    <fieldset>
+                                        <legend>Select 2 Sides</legend>
+                                        <input type="checkbox" name="sides" id="side1" value="fries">
+                                        <label for="side1">FRENCH FRIES</label><br>
+                                        <input type="checkbox" name="sides" id="side1" value="fries">
+                                        <label for="side1">FRENCH FRIES</label><br>
+                                        <input type="checkbox" name="sides" id="side2" value="coleslaw">
+                                        <label for="side2">COLESLAW</label><br>
+                                        <input type="checkbox" name="sides" id="side2" value="coleslaw">
+                                        <label for="side2">COLESLAW</label><br>
+                                        <input type="checkbox" name="sides" id="side3" value="rice">
+                                        <label for="side3">RICE</label><br>
+                                        <input type="checkbox" name="sides" id="side3" value="rice">
+                                        <label for="side3">RICE</label><br>
+                                        <input type="checkbox" name="sides" id="side4" value="corn">
+                                        <label for="side4">CORN</label><br>
+                                        <input type="checkbox" name="sides" id="side4" value="corn">
+                                        <label for="side4">CORN</label><br>
+                                        <input type="checkbox" name="sides" id="side5" value="broccoli">
+                                        <label for="side5">BROCCOLI</label><br>
+                                        <input type="checkbox" name="sides" id="side5" value="brocolli">
+                                        <label for="side5">BROCCOLI</label><br>
+                                        <input type="checkbox" name="sides" id="side6" value="mashedpotatoes">
+                                        <label for="side6">MAINE RUSSET MASHED POTATO</label><br>
+                                        <input type="checkbox" name="sides" id="side6" value="mashedpotatoes">
+                                        <label for="side7">MAINE RUSSET MASHED POTATO</label><br>
+                                        <script src="scripts.js"></script>
+                                    </fieldset>
+                                </form>
+                                </div><br>
+                                <hr>
+                                Comments:<br>
+                                <textarea id="comments"
+                                    placeholder="If you have any food allergies/additional comments, please enter them here."></textarea>
+                            </div>
+                        </fieldset>
+                        </div> 
+                    </section>
+        </div>
+        <div class="columnC">
+            <fieldset>
+            <h2>③ Extra Sides & Drink Choices</h2>
             <section>
                 <h2>Menu</h2>
                 <button id="myBtn">Food Specials</button>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <img src="https://olo-images-live.imgix.net/53/539747fd2eaf46e8ab439a2274fe0593.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=350&h=233&fit=fill&fm=png32&bg=transparent&s=2d02250d3a016d810404f7534700badc" title="Sirloin Tips & Tenders" class="image1" alt="Sirloin Tips & Tenders">
-                        <h3>SIRLOIN TIPS* & CHICKEN TENDERS FAMILY MEAL DEAL</h3>
-                        <p>Click for more:</p>
-                        <button class="collapsible">Description</button>
-                        <div class="content">
-                        <p>Our signature Broiled Sirloin Tips paired with our Original Crispy Chicken Tenders. All served with honey mustard sauce, two House Salads and two sides to share.</p>
-                        </div><br>
-                        <button class="collapsible">Select Your Temperature</button>
-                        <div class="content">
-                        <form id="order" action="order.php" method="post"> 
-                            <fieldset>
-                                <legend>Select Your Temperature</legend>
-                                <input type="radio" name="temperature" id="temp1" value="rare">
-                                <label for="temp1">RARE - COOL, RED CENTER</label><br>
-                                <input type="radio" name="temperature" id="temp2" value="mediumrare">
-                                <label for="temp2">MEDIUM RARE - WARM, RED CENTER</label><br>
-                                <input type="radio" name="temperature" id="temp3" value="medium">
-                                <label for="temp3">MEDIUM - WARM, PINK CENTER</label><br>
-                                <input type="radio" name="temperature" id="temp4" value="mediumwell">
-                                <label for="temp4">MEDIUM WELL - HOT, SLIGHTLY PINK CENTER</label><br>
-                                <input type="radio" name="temperature" id="temp5" value="well">
-                                <label for="temp5">WELL - HOT, FULLY COOKED, NO PINK</label>
-                            </fieldset>
-                        </form>
-                        </div><br>
-                        <button class="collapsible">Sides</button>
-                        <div class="content">
-                        <form id="order" action="order.php" method="post">
-                            <fieldset>
-                                <legend>Select 2 Sides</legend>
-                                <input type="checkbox" name="sides" id="side1" value="fries">
-                                <label for="side1">FRENCH FRIES</label><br>
-                                <input type="checkbox" name="sides" id="side1" value="fries">
-                                <label for="side1">FRENCH FRIES</label><br>
-                                <input type="checkbox" name="sides" id="side2" value="coleslaw">
-                                <label for="side2">COLESLAW</label><br>
-                                <input type="checkbox" name="sides" id="side2" value="coleslaw">
-                                <label for="side2">COLESLAW</label><br>
-                                <input type="checkbox" name="sides" id="side3" value="rice">
-                                <label for="side3">RICE</label><br>
-                                <input type="checkbox" name="sides" id="side3" value="rice">
-                                <label for="side3">RICE</label><br>
-                                <input type="checkbox" name="sides" id="side4" value="corn">
-                                <label for="side4">CORN</label><br>
-                                <input type="checkbox" name="sides" id="side4" value="corn">
-                                <label for="side4">CORN</label><br>
-                                <input type="checkbox" name="sides" id="side5" value="broccoli">
-                                <label for="side5">BROCCOLI</label><br>
-                                <input type="checkbox" name="sides" id="side5" value="brocolli">
-                                <label for="side5">BROCCOLI</label><br>
-                                <input type="checkbox" name="sides" id="side6" value="mashedpotatoes">
-                                <label for="side6">MAINE RUSSET MASHED POTATO</label><br>
-                                <input type="checkbox" name="sides" id="side6" value="mashedpotatoes">
-                                <label for="side7">MAINE RUSSET MASHED POTATO</label><br>
-                                <script src="scripts.js"></script>
-                            </fieldset>
-                        </form>
-                        </div><br>
-                        Comments:<br>
-                        <textarea id="comments"
-                            placeholder="If you have any food allergies/additional comments, please enter them here."></textarea>
-                    </div>
-                </div> 
-            </section>
-            <p>columnb</p>
-        </div>
-        <div class="columnC">
-            <h2>③ Extra Sides & Drink Choices</h2>
-            <p>columnc</p>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+            </fieldset>
         </div>
     </div>
     <footer>
